@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Results - VoteNext.com | Kerala Election</title>
+    <meta name="description" content="Live results for the Kerala elections social experiment.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow saffron-glow"></div>
+        <div class="glow green-glow"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 0.75rem;">
+                    <svg width="32" height="32" viewBox="0 0 100 100" class="ashoka-chakra">
+                        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="4" fill="none"/>
+                        <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                        <g fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="50" y1="50" x2="50" y2="5"/>
+                            <line x1="50" y1="50" x2="50" y2="95"/>
+                            <line x1="50" y1="50" x2="5" y2="50"/>
+                            <line x1="50" y1="50" x2="95" y2="50"/>
+                            <line x1="50" y1="50" x2="18" y2="18"/>
+                            <line x1="50" y1="50" x2="82" y2="82"/>
+                            <line x1="50" y1="50" x2="18" y2="82"/>
+                            <line x1="50" y1="50" x2="82" y2="18"/>
+                        </g>
+                    </svg>
+                    <h1>VoteNext.com</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="auth.html" id="nav-auth-link">Login</a>
+                <a href="index.html#vote" class="btn-primary">Cast Opinion</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="results-section container">
+        <div class="section-header">
+            <span class="badge">Live Updates</span>
+            <h3>Current Voting Trends</h3>
+            <p>See what the people of Kerala are predicting for the upcoming assembly elections.</p>
+        </div>
+        
+        <div class="glass-card results-card">
+            <div class="total-votes">
+                <span class="votes-count" id="totalVotesCount">0</span>
+                <span class="votes-label">Total Opinions Cast</span>
+            </div>
+
+            <div class="results-list">
+                <!-- UDF -->
+                <div class="result-item">
+                    <div class="result-info">
+                        <div style="display: flex; align-items: center;">
+                            <span class="party-name">UDF <span class="party-desc">(United Democratic Front)</span></span>
+                        </div>
+                        <span class="party-percentage" id="udf-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill udf-fill" id="udf-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <!-- LDF -->
+                <div class="result-item">
+                    <div class="result-info">
+                        <div style="display: flex; align-items: center;">
+                            <span class="party-name">LDF <span class="party-desc">(Left Democratic Front)</span></span>
+                        </div>
+                        <span class="party-percentage" id="ldf-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill ldf-fill" id="ldf-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <!-- NDA -->
+                <div class="result-item">
+                    <div class="result-info">
+                        <div style="display: flex; align-items: center;">
+                            <span class="party-name">NDA <span class="party-desc">(National Democratic Alliance)</span></span>
+                        </div>
+                        <span class="party-percentage" id="nda-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill nda-fill" id="nda-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="result-item">
+                    <div class="result-info">
+                        <div style="display: flex; align-items: center;">
+                            <span class="party-name">Others <span class="party-desc">(Independent & Others)</span></span>
+                        </div>
+                        <span class="party-percentage" id="others-percent">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill others-fill" id="others-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">VoteNext.com</div>
+            <div class="privacy-term">
+                <p>Privacy Term: This is a social-experiment not for any purposal bad infulence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

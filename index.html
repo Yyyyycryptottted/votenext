@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoteNext.com | Kerala Election Social Experiment</title>
+    <meta name="description" content="A social experiment for the upcoming Kerala elections. Who will win? Cast your opinion.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow saffron-glow"></div>
+        <div class="glow green-glow"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 100 100" class="ashoka-chakra">
+                    <!-- Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="4" fill="none"/>
+                    <circle cx="50" cy="50" r="8" fill="currentColor"/>
+                    <!-- 24 spokes -->
+                    <g fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="50" y1="50" x2="50" y2="5"/>
+                        <line x1="50" y1="50" x2="50" y2="95"/>
+                        <line x1="50" y1="50" x2="5" y2="50"/>
+                        <line x1="50" y1="50" x2="95" y2="50"/>
+                        <line x1="50" y1="50" x2="18" y2="18"/>
+                        <line x1="50" y1="50" x2="82" y2="82"/>
+                        <line x1="50" y1="50" x2="18" y2="82"/>
+                        <line x1="50" y1="50" x2="82" y2="18"/>
+                    </g>
+                </svg>
+                <h1>VoteNext.com</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About Kerala</a>
+                <a href="percentage.html">Live Results</a>
+                <a href="auth.html" id="nav-auth-link">Login</a>
+                <a href="#vote" class="btn-primary">Cast Opinion</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="badge">Social Experiment</span>
+            <h2 class="hero-title">Kerala Assembly Elections<br><span class="highlight">Who Will Win?</span></h2>
+            <p class="hero-subtitle">Join the state in predicting the outcome. Voice your opinion in this exclusive social experiment.</p>
+            <a href="#vote" class="btn-primary btn-large">Participate Now</a>
+        </div>
+    </header>
+
+    <section id="about" class="kerala-section container">
+        <div class="section-header">
+            <h3>About Kerala</h3>
+            <p>God's Own Country - The vibrant democratic state</p>
+        </div>
+        
+        <div class="kerala-grid">
+            <div class="glass-card kerala-card">
+                <!-- Add your image path to src="" -->
+                <img src="assets/kerala-electorate.jpg" alt="Kerala Electorate" class="kerala-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200/1e293b/ffffff?text=Add+Kerala+Image+Here'">
+                <div class="card-icon">🌴</div>
+                <h4>Electorate</h4>
+                <p>Over 2.7 crore eligible voters shaping the future of the state across 140 constituencies.</p>
+            </div>
+            <div class="glass-card kerala-card">
+                <!-- Add your image path to src="" -->
+                <img src="assets/kerala-literacy.jpg" alt="Kerala Literacy" class="kerala-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200/1e293b/ffffff?text=Add+Kerala+Image+Here'">
+                <div class="card-icon">📚</div>
+                <h4>Literacy</h4>
+                <p>Boasting the highest literacy rate in India, ensuring an highly educated and aware voter base.</p>
+            </div>
+            <div class="glass-card kerala-card">
+                <!-- Add your image path to src="" -->
+                <img src="assets/kerala-democracy.jpg" alt="Kerala Democracy" class="kerala-image" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200/1e293b/ffffff?text=Add+Kerala+Image+Here'">
+                <div class="card-icon">🏛️</div>
+                <h4>Democracy</h4>
+                <p>A rich history of active political participation and dynamic democratic fronts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vote" class="voting-section container">
+        <div class="glass-card vote-card">
+            <h3>Cast Your Opinion</h3>
+            <p>Select the front you believe will sweep the upcoming election.</p>
+            
+            <form id="voteForm" class="vote-form">
+                <label class="vote-option">
+                    <input type="radio" name="party" value="LDF" required>
+                    <!-- Add LDF symbol image path to src="" -->
+                    <img src="assets/ldf-symbol.png" alt="LDF Symbol" class="party-logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100/1e293b/ffffff?text=LDF'">
+                    <div class="option-content">
+                        <span class="party-name">LDF</span>
+                        <span class="party-desc">Left Democratic Front</span>
+                    </div>
+                </label>
+                
+                <label class="vote-option">
+                    <input type="radio" name="party" value="UDF">
+                    <!-- Add UDF symbol image path to src="" -->
+                    <img src="assets/udf-symbol.png" alt="UDF Symbol" class="party-logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100/1e293b/ffffff?text=UDF'">
+                    <div class="option-content">
+                        <span class="party-name">UDF</span>
+                        <span class="party-desc">United Democratic Front</span>
+                    </div>
+                </label>
+                
+                <label class="vote-option">
+                    <input type="radio" name="party" value="NDA">
+                    <!-- Add NDA symbol image path to src="" -->
+                    <img src="assets/nda-symbol.png" alt="NDA Symbol" class="party-logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100/1e293b/ffffff?text=NDA'">
+                    <div class="option-content">
+                        <span class="party-name">NDA</span>
+                        <span class="party-desc">National Democratic Alliance</span>
+                    </div>
+                </label>
+                
+                <label class="vote-option">
+                    <input type="radio" name="party" value="Others">
+                    <img src="assets/others-symbol.png" alt="Others Symbol" class="party-logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/100/1e293b/ffffff?text=Others'">
+                    <div class="option-content">
+                        <span class="party-name">Others</span>
+                        <span class="party-desc">Independent / Other Parties</span>
+                    </div>
+                </label>
+
+                <button type="submit" class="btn-submit">Submit Opinion</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">VoteNext.com</div>
+            <div class="privacy-term">
+                <p>Privacy Term: This is a social-experiment not for any purposal bad infulence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <h4>Thank You!</h4>
+            <p>Your opinion has been successfully recorded for this social experiment.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
